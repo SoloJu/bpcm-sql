@@ -5,3 +5,11 @@
 alter table system_oauth2_access_token
     add user_info varchar(512) not null comment '用户信息' after user_type;
 ```
+
+```sql
+alter table infra_api_access_log
+    add operate_module varchar(512) not null comment '用户信息' after user_type;
+```
+
+菜单导入,
+/Users/soloju/workbench/bpcm/bpcm-sql/menuMaterialReceiptImport.sql

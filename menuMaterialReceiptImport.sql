@@ -4,7 +4,7 @@ INSERT INTO system_menu(
     path, icon, component, status, component_name
 )
 VALUES (
-    '材料收货导入单管理', '', 2, 0, 15002,
+    '材料收货单导入', '', 2, 35, 15002,
     'receipt-import', '', 'material/receiptimport/index', 0, 'MaterialReceiptImport'
 );
 
@@ -51,5 +51,13 @@ INSERT INTO system_menu(
 )
 VALUES (
     '材料收货导入单导出', 'material:receipt-import:export', 3, 5, @parentId,
+    '', '', '', 0
+);
+INSERT INTO system_menu(
+    name, permission, type, sort, parent_id,
+    path, icon, component, status
+)
+VALUES (
+    '材料收货导入单导入', 'material:receipt-import:import', 3, 6, @parentId,
     '', '', '', 0
 );
