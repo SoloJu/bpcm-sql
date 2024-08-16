@@ -53,3 +53,11 @@ VALUES (
     '劳务工资导入导出', 'labor:wages-import:export', 3, 5, @parentId,
     '', '', '', 0
 );
+INSERT INTO system_menu(
+    name, permission, type, sort, parent_id,
+    path, icon, component, status
+)
+VALUES (
+    '劳务工资导入导入', 'labor:wages-import:import', 3, 6, @parentId,
+    '', '', '', 0
+);
